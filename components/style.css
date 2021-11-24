@@ -197,7 +197,9 @@ footer{
 /* -------------------------- */
 
 
-/* Estilizando o Login.php */
+/* 
+Estilizando o Login.php 
+*/
 #login{
     width: 30%;
     height: auto;
@@ -208,7 +210,7 @@ footer{
     border-radius: 5px;
 }
 
-.titulos{
+h4{
     font-size: 15px;
     font-family: Arial;
     color: #696969;
@@ -238,5 +240,39 @@ footer{
 
 .btn:hover{
     background-color:#696969;
+}
+
+.link{
+    font-size: 15px;
+    font-family: Arial;
+    margin-left: 7%;
+}
+/*-------------------------*/
+
+
+/* 
+Estilizando nav.php 
+*/
+#nav{
+    width: 40%;
+    height: auto;
+    border: 1px solid #D3D3D3;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;   
+}
+/*-------------------------*/
+
+/*
+estilizando cad.php
+*/
+#cad{width: 40%;
+    height: auto;
+    border: 1px solid #D3D3D3;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;  
 }
 /*-------------------------*/
