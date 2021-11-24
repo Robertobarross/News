@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="/projetos-php/news/components/imgs/logo-news.png" type="image/x-icon">
     <!--Link do arquivo CSS-->
     <link rel="stylesheet" href="/projetos-php/news/components/style.css">
-    <title>News</title>
+    <title>LOGIN</title>
 </head>
 <body>
 
@@ -33,7 +33,7 @@
         <div id="menu" style="display:none">
             <li><a href="login.php" class="links-li">Login</a></li>
             <li><a href="index.php" class="links-li">Inicio</a></li>
-            <li><a href="#" class="links-li">Economia</a></li>
+            <li><a href="form-cad.php" class="links-li">Cadastre-se</a></li>
             <li><a href="#" class="links-li">Sports</a></li>
             <li><a href="#" class="links-li">Mercado</a></li> 
             <li><a href="#" class="links-li">Varejo</a></li>        
@@ -50,7 +50,7 @@
 
     <!--Início da div login-->
     <div id="login">   
-        <h4 class="titulos">LOGIN</h4>
+        <h4>LOGIN</h4>
 
         <form action="logar.php" method="POST" enctype="multipart/form-data">
 
@@ -61,6 +61,8 @@
 
             <p><button type="submit" value="logar" class="btn">Logar</button>
             <input type="reset" value="limpar" class="btn"></p>
+
+            <p><a href="#" class="link">Esqueci minha senha</a></p>
         </form>
 
     </div>
