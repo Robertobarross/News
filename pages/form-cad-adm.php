@@ -40,26 +40,25 @@
             <li><a href="#" class="links-li">Turismo</a></li>        
             <li><a href="#" class="links-li">Atacado</a></li>               
         </div>
-
+    </menu>
         <h2>NEWS</h2>
         <h3>A NOTÍCIA EM PRIMEIRO LUGAR</h3>
-    </menu>
     <hr>
     <!--Fim do menu-->
 
     <div id="cad">
         <h4>CADASTRAR NOVO ADM</h4>
 
-        <form action="cad.php" method="POST" enctype="multipart/form-data">
+        <form action="/projetos-php/news/components/cad-adm.php" method="POST" enctype="multipart/form-data">
 
-            <p><input type="file" name="foto" class="campos-form"></p>
+            <p><input type="file" name="foto" class="campos-form" required></p>
             <p><input type="text" name="usuario" class="campos-form" placeholder="Cadastrar nome do usuário" required></p>
             <p><input type="email" name="email" class="campos-form" placeholder="Cadastrar e-mail" required></p>
-            <p><input type="password" name="senha" class="campos-form" placeholder="Cadastrar senha"></p>
-            <p><input type="password" name="repete-senha" class="campos-form" placeholder="Confirmar senha"></p>
+            <p><input type="password" name="password" class="campos-form" placeholder="Cadastrar senha com no máximo 8 caracteres" maxlength="8"></p>
+            <p><input type="password" name="repetepassword" class="campos-form" placeholder="Confirmar senha com no máximo 8 caracteres" maxlength="8"></p>
 
             <select name="nivel" class="campos-form">
-                <option value="user" class="campos-form">ADM</option>
+                <option value="adm" class="campos-form">ADM</option>
             </select>
 
             <p><button type="submit" value="cadastrar" class="btn">Cadastrar</button>
