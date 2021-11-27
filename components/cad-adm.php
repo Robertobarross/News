@@ -24,18 +24,10 @@ else {
     echo $registro = true; // Se as senhas estiverem corretas o registro é validado 
 }
 
-// Não permite que o mesmo e-mail faça mais de um cadastro 
-$sql = mysqli_query($link, "SELECT * FROM tb_adm ORDER BY id, email DESC LIMIT 1");
-while ($line = mysqli_fetch_array($sql)) {
-    $id = $line['id'];
-}
-
 // Insere as informações na tabela do bd 
 @mysqli_query($link,"INSERT INTO tb_adm(foto,usuario,email,password,repetepassword,nivel)VALUES('$foto','$usuario','$email','$password','$repetepassword','$nivel')");
 
 // Texto que confirma o cadastro. Editado com css 
 echo "<p style='text-align:center; color:black; padding:5px;'>Usuário cadastrado com sucesso!</b>";
-
-echo "<br><a href='cad-adm.php'> Retornar</a></br>";
 
 ?>
