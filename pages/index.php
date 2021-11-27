@@ -40,10 +40,10 @@
             <li><a href="#" class="links-li">Turismo</a></li>        
             <li><a href="#" class="links-li">Atacado</a></li>               
         </div>
-
-        <h2>NEWS</h2>
-        <h3>A NOTÍCIA EM PRIMEIRO LUGAR</h3>
+ 
     </menu>
+        <h2>NEWS</h2>
+        <h3>A NOTÍCIA EM PRIMEIRO LUGAR</h3> 
     <!--Fim do menu-->
 
 
