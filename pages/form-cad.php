@@ -40,17 +40,16 @@
             <li><a href="#" class="links-li">Turismo</a></li>        
             <li><a href="#" class="links-li">Atacado</a></li>               
         </div>
-
+    </menu>
         <h2>NEWS</h2>
         <h3>A NOTÍCIA EM PRIMEIRO LUGAR</h3>
-    </menu>
     <hr>
     <!--Fim do menu-->
 
     <div id="cad">
         <h4>CADASTRE-SE</h4>
 
-        <form action="cad-adm.php" method="POST" enctype="multipart/form-data">
+        <form action="cad.php" method="POST" enctype="multipart/form-data">
 
             <p><input type="file" name="foto" class="campos-form"></p>
             <p><input type="text" name="usuario" class="campos-form" placeholder="Cadastrar nome do usuário" required></p>
