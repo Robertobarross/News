@@ -40,10 +40,9 @@
             <li><a href="#" class="links-li">Turismo</a></li>        
             <li><a href="#" class="links-li">Atacado</a></li>               
         </div>
-
+    </menu>
         <h2>NEWS</h2>
         <h3>A NOTÍCIA EM PRIMEIRO LUGAR</h3>
-    </menu>
     <hr>
     <!--Fim do menu-->
 
@@ -52,23 +51,24 @@
 
         <form action="cad.php" method="POST" enctype="multipart/form-data">
 
-            <p><input type="file" name="foto" class="campos-form"></p>
-            <p><input type="text" name="usuario" class="campos-form" placeholder="Cadastrar nome do usuário" required></p>
-            <p><input type="email" name="email" class="campos-form" placeholder="Cadastrar e-mail" required></p>
-            <p><input type="password" name="senha" class="campos-form" placeholder="Cadastrar senha" required></p>
-            <p><input type="password" name="repete-senha" class="campos-form" placeholder="Confirmar senha" required></p>
-
             <select name="nivel" class="campos-form" required>
-                <option value="user" class="campos-form">ADM</option>
-                <option value="user" class="campos-form">ADM</option>
-                <option value="user" class="campos-form">ADM</option>
-                <option value="user" class="campos-form">ADM</option>
-                <option value="user" class="campos-form">ADM</option>
-                <option value="user" class="campos-form">ADM</option>
-
+                <option value="adm" class="campos-form">Tecnologia</option>
+                <option value="adm" class="campos-form">Mundo</option>
+                <option value="adm" class="campos-form">Cotidiano</option>
+                <option value="adm" class="campos-form">Poder</option>
+                <option value="adm" class="campos-form">Cultura</option>
+                <option value="adm" class="campos-form">Sports</option>
+                <option value="adm" class="campos-form">Política</option>
             </select>
 
-            <p><button type="submit" value="cadastrar" class="btn">Cadastrar</button>
+            <p><input type="file" name="foto" class="campos-form"></p>
+            <p><input type="text" name="titulo" class="campos-form" placeholder="Dê um titulo para notícia" required></p>
+            <p><input type="text" name="informes" class="campos-form" placeholder="Informações relevantes" required></p>
+            <textarea rows="10" cols="50" class="campos-form" placeholder="Descreva as informções para essa notícia com no máximo 300 caracteres" maxlength="300" required></textarea>
+            <p><input type="date" name="dt" class="campos-form" required></p>
+            <p><input type="time" name="hr" class="campos-form" required></p>
+
+            <p><button type="submit" value="cadastrar" class="btn">Enviar</button>
             <input type="reset" value="limpar" class="btn"></p>
 
         </form>
