@@ -27,7 +27,11 @@ else {
 // Insere as informações na tabela do bd 
 @mysqli_query($link,"INSERT INTO tb_adm(foto,usuario,email,password,repetepassword,nivel)VALUES('$foto','$usuario','$email','$password','$repetepassword','$nivel')");
 
-// Texto que confirma o cadastro. Editado com css 
-echo "<p style='text-align:center; color:black; padding:5px;'>Usuário cadastrado com sucesso!</b>";
+// Texto que confirma o cadastro 
+echo "<p style='font-family:arial black; color:green;'>Usuário Cadastrado Com Sucesso!</p>";
 
 ?>
+
+<p><a href="/projetos-php/news/pages/form-cad-adm.php" style="font-family:arial black; color:blue;"><-- Retornar</a></p>
+
+
