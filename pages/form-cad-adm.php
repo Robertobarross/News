@@ -48,7 +48,7 @@
 
     <div id="cad">
         <h4>CADASTRAR NOVO ADM</h4>
-
+        
         <form action="/projetos-php/news/components/cad-adm.php" method="POST" enctype="multipart/form-data">
 
             <p><input type="file" name="foto" class="campos-form" required></p>
