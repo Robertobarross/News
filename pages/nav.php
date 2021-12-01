@@ -50,9 +50,9 @@
         <h4>PAINEL DE NAVEGAÇÃO</h4>
 
         <p><a href="form-cad-adm.php" class="link">Cadastrar Novo ADM</a></p>
-        <p><a href="form-cad.php" class="link">Cadastrar Usuário</a></p>
         <p><a href="form-post1.php" class="link">Cadastrar Notícia principal</a></p>
         <p><a href="form-post2.php" class="link">Cadastrar Notícia Secundária</a></p>
+
     </div>
 
 </body>
