@@ -22,16 +22,10 @@ if($password != $repetepassword) {
 
 else {
     echo $registro = true; // Se as senhas estiverem corretas o registro é validado 
+    header('location:/projetos-php/news/pages/form-cad-adm.php'); // Permanecer na página de cadstro
 }
 
 // Insere as informações na tabela do bd 
 @mysqli_query($link,"INSERT INTO tb_adm(foto,usuario,email,password,repetepassword,nivel)VALUES('$foto','$usuario','$email','$password','$repetepassword','$nivel')");
 
-// Texto que confirma o cadastro 
-echo "<p style='font-family:arial black; color:green;'>Usuário Cadastrado Com Sucesso!</p>";
-
 ?>
-
-<p><a href="/projetos-php/news/pages/form-cad-adm.php" style="font-family:arial black; color:blue;"><-- Retornar</a></p>
-
-
