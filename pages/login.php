@@ -51,12 +51,12 @@
     <div id="login">   
         <h4>LOGIN</h4>
 
-        <form action="logar.php" method="POST" enctype="multipart/form-data">
+        <form action="/projetos-php/news/components/logar.php" method="POST" enctype="multipart/form-data">
 
             <br><img src="/projetos-php/news/components/imgs/icon-login.png" alt="Login" class="img-login">
 
             <p><input type="email" name="email" class="campos-form" placeholder="Digite seu e-mail" required></p>
-            <p><input type="password" name="senha" class="campos-form" placeholder="Digite sua senha" required></p>
+            <p><input type="password" name="password" class="campos-form" placeholder="Digite sua senha" required></p>
 
             <p><button type="submit" value="logar" class="btn">Logar</button>
             <input type="reset" value="limpar" class="btn"></p>
