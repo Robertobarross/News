@@ -28,10 +28,7 @@ if($email != "" && $password != "") {
     	$_session['password'] = $password;
     	if ($nivel == 'adm') {
     		header('location:/projetos-php/news/pages/nav.php');
-    	}/*else{
-    		header('location:cliente.php');
-
-    	}*/
+		}
     }
 
     // Os códigos a baixo enviam uma mensagem de erro caso as informaçoes de cadastro estejam incorretas.
