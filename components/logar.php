@@ -1,7 +1,7 @@
 <?php
 // Arquivo para login, está vinculado com login.php 
 include "connect-db.php"; // O include da acesso ao Banco de Dados 
-
+session_start();
 $email = $_POST['email'];
 $password = $_POST['password'];
 
@@ -24,8 +24,8 @@ if($email != "" && $password != "") {
     if($registro){
     	if ($senha_user == $password) {
     	session_start();
-    	$_session['login'] = $email;
-    	$_session['password'] = $password;
+    	$_SESSION['login'] = $email;
+    	$_SESSION['password'] = $password;
     	if ($nivel == 'adm') {
     		header('location:/projetos-php/news/pages/nav.php');
 		}
@@ -34,7 +34,7 @@ if($email != "" && $password != "") {
     // Os códigos a baixo enviam uma mensagem de erro caso as informaçoes de cadastro estejam incorretas.
     }else{
     	echo "<p style='font-family:arial black; color:red;'>Você não é cadastrado!</p>";
-    	echo "<p style='font-family:arial black; color:blue;'><a href='/projetos-php/news/pages/index.php'>Retornar</a></p>";
+    	echo "<p style='font-family:arial black; color:blue;'><a href='/projetos-php/news/pages/login.php'>Retornar</a></p>";
     }
 }
 
