@@ -37,7 +37,7 @@ session_start(); // Estartando a sessão
         <div id="menu" style="display:none">
             <li><a href="login.php" class="links-li">Login</a></li>
             <li><a href="index.php" class="links-li">Inicio</a></li>
-            <li><a href="#" class="links-li">Poder</a></li>
+            <li><a href="nav.php" class="links-li">Painel de Navegação</a></li>
             <li><a href="#" class="links-li">Sports</a></li>
             <li><a href="#" class="links-li">Mercado</a></li> 
             <li><a href="#" class="links-li">Varejo</a></li>        
