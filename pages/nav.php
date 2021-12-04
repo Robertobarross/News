@@ -1,4 +1,4 @@
-<?php
+<?php // Restrição a usuário não logado
 
 session_start(); // Estartando a sessão
 
@@ -74,6 +74,7 @@ if(!isset($_SESSION['login'])) { // Se o usuário não tiver cadastro será redi
         <p><a href="form-cad-adm.php" class="link">Cadastrar Novo ADM</a></p>
         <p><a href="form-post1.php" class="link">Cadastrar Notícia principal</a></p>
         <p><a href="form-post2.php" class="link">Cadastrar Notícia Secundária</a></p>
+        <p><a href="/projetos-php/news/components/logout.php" class="link">LOGOUT</a></p>
 
     </div>
 
