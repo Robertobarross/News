@@ -2,8 +2,8 @@
 // Arquivo para login, está vinculado com login.php 
 include "connect-db.php"; // O include da acesso ao Banco de Dados 
 session_start();
-$email = $_POST['email'];
-$password = $_POST['password'];
+@$email = $_POST['email'];
+@$password = $_POST['password'];
 
 if($email != "" && $password != "") {
 	//echo "Usuário logado";
@@ -25,6 +25,7 @@ if($email != "" && $password != "") {
     	if ($senha_user == $password) {
     	session_start();
     	$_SESSION['login'] = $email;
+		$_SESSION['email'] = $email;
     	$_SESSION['password'] = $password;
     	if ($nivel == 'adm') {
     		header('location:/projetos-php/news/pages/nav.php');
