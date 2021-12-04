@@ -1,3 +1,27 @@
+<?php // Restrição a usuário não logado
+
+session_start(); // Estartando a sessão
+
+if(isset($_POST['email'])) { // Declarando variáveis da conexão
+    $email = $_POST['email'];
+}
+
+if(isset($_POST['password'])) { // Declarando variáveis da conexão
+    $password = $_POST['password'];
+
+    if($email == "email" and $password == "password") { // Se email e password estiveram cadastrados
+        $_SESSION['login'] =  true; // O login será autorizado
+    }
+}
+
+if(!isset($_SESSION['login'])) { // Se o usuário não tiver cadastro será redirecionado para tela de login
+    header('location:login.php');
+}
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -34,7 +58,7 @@
             <li><a href="login.php" class="links-li">Login</a></li>
             <li><a href="index.php" class="links-li">Inicio</a></li>
             <li><a href="nav.php" class="links-li">Painel de Navegação</a></li>
-            <li><a href="form-post1.php" class="links-li">Notícias Principais</a></li>
+            <li><a href="form-post2.php" class="links-li">Notícias Secudarias</a></li>
             <li><a href="#" class="links-li">Mercado</a></li> 
             <li><a href="#" class="links-li">Varejo</a></li>        
             <li><a href="#" class="links-li">Turismo</a></li>        
@@ -47,26 +71,18 @@
     <!--Fim do menu-->
 
     <div id="cad">
-        <h4>CADASTRAR NOTÍCIAS SECUNDARIAS</h4>
+        <h4 color="blue">CADASTRAR NOTÍCIAS SECUNDÁRIAS</h4>
 
-        <form action="cad.php" method="POST" enctype="multipart/form-data">
+        <form action="/projetos-php/news/components/post2.php" method="POST" enctype="multipart/form-data">
 
-            <select name="nivel" class="campos-form" required>
-                <option value="adm" class="campos-form">Tecnologia</option>
-                <option value="adm" class="campos-form">Mundo</option>
-                <option value="adm" class="campos-form">Cotidiano</option>
-                <option value="adm" class="campos-form">Poder</option>
-                <option value="adm" class="campos-form">Cultura</option>
-                <option value="adm" class="campos-form">Sports</option>
-                <option value="adm" class="campos-form">Política</option>
-            </select>
-
-            <p><input type="file" name="foto" class="campos-form"></p>
+            <p><input type="text" name="tema" class="campos-form" placeholder="Tema" required></p>
+            <p><input type="file" name="imagem" class="campos-form"></p>
             <p><input type="text" name="titulo" class="campos-form" placeholder="Dê um titulo para notícia" required></p>
-            <p><input type="text" name="informes" class="campos-form" placeholder="Informações relevantes" required></p>
-            <textarea rows="10" cols="50" class="campos-form" placeholder="Descreva as informções para essa notícia com no máximo 300 caracteres" maxlength="300" required></textarea>
+            <p><input type="text" name="relevantes" class="campos-form" placeholder="Informações relevantes" required></p>
+            <textarea name="noticia" rows="10" cols="50" class="campos-form" placeholder="Descreva as informções para essa notícia com no máximo 300 caracteres" maxlength="300" required></textarea>
             <p><input type="date" name="dt" class="campos-form" required></p>
             <p><input type="time" name="hr" class="campos-form" required></p>
+            <p><input type="text" name="usuario" class="campos-form" placeholder="Usuário" required></p>
 
             <p><button type="submit" value="cadastrar" class="btn">Enviar</button>
             <input type="reset" value="limpar" class="btn"></p>
