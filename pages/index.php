@@ -79,7 +79,14 @@ session_start(); // Estartando a sessão
 
     <!--Iníco do main centro da página-->
     <main>
-        Centro
+
+        <?php
+
+            include "C:/wamp64/www/Projetos-PHP/News/components/retorn-post1.php"; 
+            include "C:/wamp64/www/Projetos-PHP/News/components/retorn-post2.php";                     
+            
+        ?>
+        
     </main>
     <!--Fim do main centro da página-->
 
