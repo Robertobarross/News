@@ -19,21 +19,19 @@ $sql = mysqli_query($link, "SELECT * FROM tb_post2 ORDER BY tema DESC");// faz a
 ?>
 
 <!--Div da postagem-->
-<div id="post2">
+<p></p><div class="post2">
 
-    <div id="campos-post2">
         <!--Campos da postagem principal-->
-        <p>Tema: <?php echo $tema;?></p>
-        <p>Notícia: <?php echo $titulo;?></p>
-        <br><img src="imgs-posts/<?php echo ""."/".$imagem;?>" width="80%"> 
-        <p><?php echo $relevantes;?></p>
-        <p><?php echo $noticia;?></p>
-        <p>Data: <?php echo $dt;?></p>
-        <p>Hora: <?php echo $hr;?></p>
-        <p>Reporter: <?php echo $usuario;?></p>
-    </div>
+        <p class="campos-post2">Tema: <?php echo $tema;?></p>
+        <p class="campos-post2">Notícia: <?php echo $titulo;?></p>
+        <br><img src="imgs-posts/<?php echo ""."/".$imagem;?>" width="100%"> 
+        <p class="campos-post2"><?php echo $relevantes;?></p>
+        <p class="campos-post2"><?php echo $noticia;?></p>
+        <p class="campos-post2">Data: <?php echo $dt;?></p>
+        <p class="campos-post2">Hora: <?php echo $hr;?></p>
+        <p class="campos-post2">Reporter: <?php echo $usuario;?></p>
 
-</div>
+</div></p>
 <!--Fim da div da postagem-->
 
 
@@ -43,27 +41,19 @@ $sql = mysqli_query($link, "SELECT * FROM tb_post2 ORDER BY tema DESC");// faz a
 
 <style type="text/css">
     /* Estilizando os campos da postagem principal */
+.post2{
+    width: 20%;
+    height: auto;
+    float: right;
+    margin-right: 50px;
+    margin-top: 100px;
+}
 
-    #post2{
-        float: right; 
-        width: 50%;
-        margin-right: 30px;
-        margin-top: -3385px;
-       /* display: inline-block; */
-       border: 1px solid black;
-    }
-
-    p{
-        font-size: 15px;
-        font-family: Arial;
-        color: #363636;
-        text-align: justify;
-    }
-
-    #campos-post2{
-        width: 40%;
-        margin-right: 20px;
-        display: inline-block;
-    }
-
+.campos-post2{
+    font-size: 10px;
+    font-family: Arial;
+    color: #363636;
+    text-align: justify;
+}
+  
 </style>
