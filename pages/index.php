@@ -70,7 +70,7 @@ session_start(); // Estartando a sessão
     <div id="nav-inferior">
         <a href="#" class="link-nav-inferior">Assine o News e tenha sempre as melhores notícias em primeira mão!</a>
 
-        <form action="search" method="POST" action="search.php">
+        <form action="search.php" method="POST">
             <input type="search" name="search" class="search" placeholder="Buscar">
         </form>
     </div>
@@ -82,8 +82,8 @@ session_start(); // Estartando a sessão
 
         <?php
 
-            include "C:/wamp64/www/Projetos-PHP/News/components/retorn-post1.php"; 
-            include "C:/wamp64/www/Projetos-PHP/News/components/retorn-post2.php";                     
+            include "C:/wamp64/www/Projetos-PHP/News/components/retorn-post1.php";  
+            include "C:/wamp64/www/Projetos-PHP/News/components/retorn-post2.php";                    
             
         ?>
         
