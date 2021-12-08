@@ -18,6 +18,7 @@ session_start(); // Estartando a sessão
 
     <!--Topo da página-->
     <div id="topo">
+
         <img src="/projetos-php/news/components/imgs/globo-terrestre.jpg" class="clobo-terrestre" alt="Globo terrestre">
         <h1>NEWS</h1>
 
@@ -38,11 +39,6 @@ session_start(); // Estartando a sessão
             <li><a href="login.php" class="links-li">Login</a></li>
             <li><a href="index.php" class="links-li">Inicio</a></li>
             <li><a href="nav.php" class="links-li">Painel de Navegação</a></li>
-            <li><a href="#" class="links-li">Sports</a></li>
-            <li><a href="#" class="links-li">Mercado</a></li> 
-            <li><a href="#" class="links-li">Varejo</a></li>        
-            <li><a href="#" class="links-li">Turismo</a></li>        
-            <li><a href="#" class="links-li">Atacado</a></li>               
         </div>
  
     </menu>
@@ -55,12 +51,12 @@ session_start(); // Estartando a sessão
     <nav>
         <hr>
         <br>
-           <a href="#" class="links-nav">Tecnologia</a>
-           <a href="#" class="links-nav">Mundo</a>
-           <a href="#" class="links-nav">Cotidiano</a>
-           <a href="#" class="links-nav">Poder</a>
-           <a href="#" class="links-nav">Cultura</a>
-           <a href="#" class="links-nav">Sports</a>
+           <a href="search.php" class="links-nav">Tecnologia</a>
+           <a href="search.php" class="links-nav">Mundo</a>
+           <a href="search.php" class="links-nav">Cotidiano</a>
+           <a href="search.php" class="links-nav">Poder</a>
+           <a href="search.php" class="links-nav">Cultura</a>
+           <a href="search.php" class="links-nav">Sports</a>
         </br>
     </nav>
     <!--Fim da nav-->
@@ -70,11 +66,23 @@ session_start(); // Estartando a sessão
     <div id="nav-inferior">
         <a href="#" class="link-nav-inferior">Assine o News e tenha sempre as melhores notícias em primeira mão!</a>
 
-        <form action="search.php" method="POST">
-            <input type="search" name="search" class="search" placeholder="Buscar">
-        </form>
+            <?php
+                include "form-search.php";
+            ?>
+
     </div>
     <!--Fim da div inferior-->
+
+
+    <!--Usuário logado-->
+    <div id="user">
+        
+        <?php
+           echo "Bem vindo(a); "; echo @$_SESSION['email']; // Usuário logado
+       ?>
+
+    </div>
+    <!--Usuário logado-->
 
 
     <!--Iníco do main centro da página-->
