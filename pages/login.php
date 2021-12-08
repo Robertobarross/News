@@ -33,18 +33,17 @@
         <div id="menu" style="display:none">
             <li><a href="login.php" class="links-li">Login</a></li>
             <li><a href="index.php" class="links-li">Inicio</a></li>
-            <li><a href="form-cad.php" class="links-li">Cadastre-se</a></li>
-            <li><a href="#" class="links-li">Sports</a></li>
-            <li><a href="#" class="links-li">Mercado</a></li> 
-            <li><a href="#" class="links-li">Varejo</a></li>        
-            <li><a href="#" class="links-li">Turismo</a></li>        
-            <li><a href="#" class="links-li">Atacado</a></li>               
+            <li><a href="nav.php" class="links-li">Painel de Navegação</a></li>               
         </div>
     </menu>
         <h2>NEWS</h2>
         <h3>A NOTÍCIA EM PRIMEIRO LUGAR</h3>
     <hr>
     <!--Fim do menu-->
+
+
+    </div>
+    <!--Usuário logado-->
 
 
     <!--Início da div login-->
