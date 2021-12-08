@@ -58,17 +58,25 @@ if(!isset($_SESSION['login'])) { // Se o usuário não tiver cadastro será redi
             <li><a href="login.php" class="links-li">Login</a></li>
             <li><a href="index.php" class="links-li">Inicio</a></li>
             <li><a href="nav.php" class="links-li">Painel de Navegação</a></li>
-            <li><a href="form-post2.php" class="links-li">Notícias Secudarias</a></li>
-            <li><a href="#" class="links-li">Mercado</a></li> 
-            <li><a href="#" class="links-li">Varejo</a></li>        
-            <li><a href="#" class="links-li">Turismo</a></li>        
-            <li><a href="#" class="links-li">Atacado</a></li>               
+            <li><a href="form-post1.php" class="links-li">Notícias Principais</a></li>                           
         </div>
     </menu>
         <h2>NEWS</h2>
         <h3>A NOTÍCIA EM PRIMEIRO LUGAR</h3>
     <hr>
     <!--Fim do menu-->
+
+
+    <!--Usuário logado-->
+    <div id="user">
+        
+        <?php
+           echo "Bem vindo(a); "; echo $_SESSION['email']; // Usuário logado
+       ?>
+
+    </div>
+    <!--Usuário logado-->
+    
 
     <div id="cad">
         <h4 color="blue">CADASTRAR NOTÍCIAS SECUNDÁRIAS</h4>
@@ -79,7 +87,7 @@ if(!isset($_SESSION['login'])) { // Se o usuário não tiver cadastro será redi
             <p><input type="file" name="imagem" class="campos-form"></p>
             <p><input type="text" name="titulo" class="campos-form" placeholder="Dê um titulo para notícia" required></p>
             <p><input type="text" name="relevantes" class="campos-form" placeholder="Informações relevantes" required></p>
-            <textarea name="noticia" rows="10" cols="50" class="campos-form" placeholder="Descreva as informções para essa notícia com no máximo 300 caracteres" maxlength="300" required></textarea>
+            <textarea name="noticia" rows="10" cols="50" class="campos-form" placeholder="Descreva as informções para essa notícia com no máximo 800 caracteres" maxlength="800" required></textarea>
             <p><input type="date" name="dt" class="campos-form" required></p>
             <p><input type="time" name="hr" class="campos-form" required></p>
             <p><input type="text" name="usuario" class="campos-form" placeholder="Usuário" required></p>
