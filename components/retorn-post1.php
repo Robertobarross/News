@@ -44,7 +44,7 @@ $sql = mysqli_query($link, "SELECT * FROM tb_post1 ORDER BY tema DESC");// faz a
     /* Estilizando os campos da postagem principal */
 
     #post1{
-        width: 25%;
+        width: 40%;
         margin-left: 85px;
         margin-top: 80px;
         float: left;
