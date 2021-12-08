@@ -30,6 +30,7 @@ $sql = mysqli_query($link, "SELECT * FROM tb_post2 ORDER BY tema DESC");// faz a
         <p class="campos-post2">Data: <?php echo $dt;?></p>
         <p class="campos-post2">Hora: <?php echo $hr;?></p>
         <p class="campos-post2">Reporter: <?php echo $usuario;?></p>
+        <hr>
 
 </div></p>
 <!--Fim da div da postagem-->
