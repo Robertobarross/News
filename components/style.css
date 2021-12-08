@@ -278,3 +278,14 @@ estilizando cad.php
     border-radius: 5px;  
 }
 /*-------------------------*/
+
+
+/*-------------------------*/
+#user{
+    width: auto;
+    height: auto;
+    background-color: #DCDCDC;
+    color: #0000FF;
+    font-size: 12px;
+    font-family: Arial;
+}
