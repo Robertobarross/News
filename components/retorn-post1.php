@@ -30,6 +30,7 @@ $sql = mysqli_query($link, "SELECT * FROM tb_post1 ORDER BY tema DESC");// faz a
     <p class="campos-post1">Data: <?php echo $dt;?></p>
     <p class="campos-post1">Hora: <?php echo $hr;?></p>
     <p class="campos-post1">Reporter: <?php echo $usuario;?></p>
+    <hr>
 
 </div>
 <!--Fim da div da postagem-->
@@ -43,8 +44,8 @@ $sql = mysqli_query($link, "SELECT * FROM tb_post1 ORDER BY tema DESC");// faz a
     /* Estilizando os campos da postagem principal */
 
     #post1{
-        width: 40%;
-        margin-left: 90px;
+        width: 25%;
+        margin-left: 85px;
         margin-top: 80px;
         float: left;
     }
