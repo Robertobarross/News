@@ -56,18 +56,25 @@ if(!isset($_SESSION['login'])) { // Se o usuário não tiver cadastro será redi
         <div id="menu" style="display:none">
             <li><a href="login.php" class="links-li">Login</a></li>
             <li><a href="index.php" class="links-li">Inicio</a></li>
-            <li><a href="nav.php" class="links-li">Painel de Navegação</a></li>
-            <li><a href="#" class="links-li">Sports</a></li>
-            <li><a href="#" class="links-li">Mercado</a></li> 
-            <li><a href="#" class="links-li">Varejo</a></li>        
-            <li><a href="#" class="links-li">Turismo</a></li>        
-            <li><a href="#" class="links-li">Atacado</a></li>               
+            <li><a href="nav.php" class="links-li">Painel de Navegação</a></li>              
         </div>
     </menu>
         <h2>NEWS</h2>
         <h3>A NOTÍCIA EM PRIMEIRO LUGAR</h3>
     <hr>
     <!--Fim do menu-->
+
+
+    <!--Usuário logado-->
+    <div id="user">
+        
+        <?php
+           echo "Bem vindo(a); "; echo $_SESSION['email']; // Usuário logado
+       ?>
+
+    </div>
+    <!--Usuário logado-->
+
 
     <div id="cad">
         <h4>CADASTRAR NOVO ADM</h4>
