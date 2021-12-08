@@ -9,7 +9,7 @@ if($email != "" && $password != "") {
 	//echo "Usuário logado";
 
 	// Cód. para aceitar apenas email e senha já cadastrados.
-	$sql = mysqli_query($link,"SELECT * FROM tb_adm WHERE email = '$email' ");
+	$sql = mysqli_query($link,"SELECT * FROM tb_adm WHERE email = '$email' LIMIT 1");
     $sql = mysqli_query($link,"SELECT * FROM tb_adm WHERE password = '$password' ");
 
 	$registro = mysqli_num_rows($sql); // Trás uma consulta do registro de email do Banco de Dados.
