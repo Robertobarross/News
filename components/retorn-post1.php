@@ -7,7 +7,7 @@ $sql = mysqli_query($link, "SELECT * FROM tb_post1 ORDER BY tema DESC");// faz a
 
         // Variáveis da coneção 
         $tema = $line['tema'];
-	    $imagem = $line['imagem'];
+	$imagem = $line['imagem'];
         $titulo = $line['titulo'];
         $relevantes = $line['relevantes'];
         $noticia = $line['noticia'];
